@@ -2,9 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
 </head>
 <body>
-
+    <h2>Survey for Web Creators</h2>
+    <form action="/form_ok.jsp" method="post">
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" value="길동" /><br /><br />
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" value="홍" /><br /><br />
+        <label for="age">Age:</label><br />
+        <input type="number" id="age" name="age" min="0">
+        <p>Favorite web language:</p>
+        <input type="radio" id="html" name="fav_language" value="HTML" />
+        <label for="html">HTML</label><br />
+        <input type="radio" id="css" name="fav_language" value="CSS" />
+        <label for="css">CSS</label><br />
+        <input
+                type="radio"
+                id="javascript"
+                name="fav_language"
+                value="JavaScript"
+        />
+        <label for="javascript">JavaScript</label><br />
+        <p>Do you frequently:</p>
+        <input type="checkbox" id="task1" name="task1" value="Github" />
+        <label for="task1">Upload to github?</label><br />
+        <input type="checkbox" id="task2" name="task2" value="Netlify" />
+        <label for="task2">Deploy with Netlify?</label><br />
+        <input type="checkbox" id="task3" name="task3" value="Files" />
+        <label for="task3">Create more than 20 files for a webpage?</label
+        ><br /><br />
+        <label for="IDE">Favorite IDE:</label>
+        <select id="IDE" name="IDE">
+            <option value="STS4">STS4</option>
+            <option value="IntelliJ">IntelliJ</option>
+            <option value="VSCode">VSCode</option>
+        </select>
+        <br /><br />
+        <label for="restaurant">Where do eat most often?</label><br />
+        <input list="restaurants" name="restaurant" id="restaurant">
+        <datalist id="restaurants">
+            <option value="Student Cafeteria">
+            <option value="Moms Kitchen">
+            <option value="Handong Lounge">
+            <option value="The Grace Table">
+            <option value="Home">
+        </datalist><br /><br />
+        <label for="favcolor">What is your favorite color?</label>
+        <input type="color" id="favcolor" name="favcolor" value="#ffffff"><br><br>
+        <textarea name="comments" rows="10" cols="30">Any nerdy comments?</textarea>
+        <br /><br />
+        <label for="submitdate">Date Submitted:</label>
+        <input type="date" id="submitdate" name="submitdate" /><br /><br />
+        <input type="submit" value="Submit" />
+    </form>
 </body>
 </html>
