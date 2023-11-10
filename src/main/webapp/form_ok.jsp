@@ -18,7 +18,6 @@
     String lname = request.getParameter("lname");
     String age = request.getParameter("age");
     String fav_language = request.getParameter("fav_language");
-    String tasks[] = request.getParameterValues("task");
     String IDE = request.getParameter("IDE");
     String restaurant = request.getParameter("restaurant");
     String favcolor = request.getParameter("favcolor");
@@ -31,14 +30,15 @@
     Last name: <%=lname%> <br />
     Age: <%=age%> <br />
     Favorite language: <%=fav_language%> <br />
+    Frequent tasks:
     <c:forEach items="${paramValues.task}" var="task">
         <p>${task}</p>
     </c:forEach>
-    Favorite language: <%=fav_language%> <br />
-    Favorite language: <%=fav_language%> <br />
-    Favorite language: <%=fav_language%> <br />
-    Favorite language: <%=fav_language%> <br />
-    Favorite language: <%=fav_language%> <br />
+    Favorite IDE: <%=IDE%> <br />
+    Typical eating place: <%=restaurant%> <br />
+    Favorite color: <%=favcolor%> <br />
+    Nerdy comment: <%=comments%> <br />
+    Submitted date: <%=submitdate%> <br />
 
 
 </html>
