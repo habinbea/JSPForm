@@ -32,7 +32,7 @@
     Favorite language: <%=fav_language%> <br />
     Frequent tasks:
     <c:forEach items="${paramValues.task}" var="task">
-        <p>${task}</p>
+        <ul style="margin: 0;">${task}</ul>
     </c:forEach>
     Favorite IDE: <%=IDE%> <br />
     Typical eating place: <%=restaurant%> <br />
